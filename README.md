@@ -17,5 +17,9 @@ Add Movement Page:
 
 Database(Admin site):
 ![Screenshot 2023-07-19 101708](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/76633194-3d9d-4b3f-88ae-f5052f5d0e0c)
+
 ![Screenshot 2023-07-19 101953](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/b7180b40-ea5b-4359-9e71-0d69c876e112)
 
+![Screenshot 2023-07-19 103109](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/d5e05994-5eff-4254-8cf7-c87b73e9056c)
+
+![Screenshot 2023-07-19 103342](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/6d1f3bf2-9508-4401-b86a-c9fad44757cb)
