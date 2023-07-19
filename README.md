@@ -1,12 +1,11 @@
 # Inventory-Management-System
 
-Tools:
-  1.HTML
-  2.CSS
-  3.Django(Python Web Framework)
-  4.SQLite(Database Management)
-  5.Visual Studio Code(IDE)
-
+### Tools:
+  1. HTML
+  1. CSS
+  1. Django(Python Web Framework)
+  1. SQLite(Database Management)
+  1. Visual Studio Code(IDE)
 
 
 Home Page:
