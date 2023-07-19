@@ -14,3 +14,8 @@ Product Movement Page:
 
 Add Movement Page:
 ![Screenshot 2023-07-19 103451](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/415303ce-cbc8-4c07-8c65-5078f5934f34)
+
+Database(Admin site):
+![Screenshot 2023-07-19 101708](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/76633194-3d9d-4b3f-88ae-f5052f5d0e0c)
+![Screenshot 2023-07-19 101953](https://github.com/Devaraj142/Inventory-Management-System/assets/113374219/b7180b40-ea5b-4359-9e71-0d69c876e112)
+
