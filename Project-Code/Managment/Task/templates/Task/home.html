@@ -1,0 +1,36 @@
+{% extends "Task/layout.html" %}
+{% block head %}
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+    .center{
+        margin-left: 75%;
+    }
+    .one,.second{
+        margin-top: 5%;
+        margin-left: 5%;
+        cursor: grab;
+    }
+</style>
+{% endblock %}
+{% block body %}
+   
+    <nav style="background-color: aliceblue;">
+        <div class="center">    
+            <a class="home" href="">Home</a>
+            <a class="one" href="{% url 'product' %}">Product</a>
+            <a class="second" href="{% url 'goods' %}">GoodsMovement</a>
+        </div>
+    </nav>
+    <h1 style="text-align: center;color: red;">INVENTORY MANAGMENT SYSTEM</h1>
+    <p style="text-align: justify; margin-top: 5%;">
+        Efficient inventory management is essential for businesses of all sizes to streamline their operations and maximize profitability. 
+        Our Inventory Management System is designed to help you effectively manage your inventory, reduce costs, and improve customer satisfaction.
+        <div>
+            
+        like home page content! May display here.
+
+        </div>
+    </p>
+{% endblock %}

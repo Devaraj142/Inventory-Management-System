@@ -1,0 +1,61 @@
+{% extends "Task/layout.html" %}
+{% block head %}
+<style>
+    body{
+        background-color: beige;
+    }
+    .center{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top{
+        background-color: white;
+    }
+
+    .mid{
+        text-align: center;
+        background-color: grey;
+    }
+    button{
+        margin-left: 75%;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: green;
+        border-color: black;
+        border-style: ridge;
+    }
+</style>
+
+{% endblock %}
+{% block body %}
+    <form method="POST" action="{% url 'insert' %}" >
+        {% csrf_token %}
+        <button>Add Product</button>
+    </form>
+    <h1 style="text-align: center;color: red;" >PRODUCTS</h1>
+    <br>
+    <p>
+        <table class="center" border="1px" >
+            <thead class="top">
+                <tr>
+                    <th>Product</th>
+                    <th>Warhouse</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody class="mid">
+                {% for item in object %}
+                <tr>
+                    <td>{{ item.pname }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.place }}</td>
+                </tr>
+                {% endfor %}
+            
+            </tbody>
+        </table>
+    </p>
+    <br>
+{% endblock %}

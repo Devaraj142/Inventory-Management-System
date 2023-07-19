@@ -1,0 +1,63 @@
+{% extends 'Task/layout.html' %}
+{% block head %}
+<style>
+    body{
+        background-color: beige;
+    }
+    .center{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top{
+        background-color: white;
+    }
+
+    .mid{
+        text-align: center;
+    }
+    button{
+        margin-left: 75%;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: green;
+        border-color: black;
+        border-style: ridge;
+    }
+</style>
+{% endblock %}
+{% block body %}
+    <div class="full">
+        <form action="{% url 'move' %}" method="#">
+            {% csrf_token %}
+            <button>Add Move</button>
+        </form>
+        <h1 style="text-align: center;color: red;" >GOODS MOVEMENT</h1>
+        <br>
+        <p>
+            <table class="center" border="1px" bgcolor="grey" >
+                <thead class="top">
+                    <tr>
+                        <th>Product</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="mid">
+                    {% for item in objects %}
+                    <tr>
+                        <td>{{ item.mpname }}</td>
+                        <td>{{ item.orgin }}</td>
+                        <td>{{ item.destiny }}</td>
+                        <td>{{ item.qty }}</td>
+                    </tr>
+                    {% endfor %}
+                
+                </tbody>
+            </table>
+        </p>
+        </br>
+    </div>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'Task/layout.html' %}
+{% block head %}
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    .full{
+        background-color: forestgreen;
+        margin-left: 10%;
+        margin-top: auto;
+    }
+    .center{
+        background-color: green;
+        border-radius: 10%;
+        margin-top: 15%;
+        margin-left: 35%;
+        margin-right: 35%;
+        
+    }
+    h3{
+        margin-left: 10%;
+    }
+    .good{
+        margin-left: 80%;
+    }
+    .first{
+        margin-top: auto;
+        margin-left: 10%;
+    }
+    .second{
+        margin-left: 10%;
+    }
+    .third{
+        margin-left: 15%;
+    }
+    .fourth{
+        margin-left: 10%;
+    }
+    
+    .last{
+        margin-left: 60%;
+        background-color: antiquewhite;
+    }
+</style>
+{% endblock %}
+{% block body %}
+
+    <div class="good">
+        <a href="{% url 'home' %}">Home</a>
+        <a style="margin-left: 10%;" href="{% url 'goods' %}">GoodsMovement</a>
+    </div>    
+    <form  class="center" action="{% url 'goods' %}" method="post">
+        {% csrf_token %}
+        <h3>Make Movement:</h3>
+    
+        <p>
+            <div class="first">
+                <label >Product :</label>
+                <input type="text" placeholder="Product" name="mpname">
+            </div>        
+        </p>
+        <p>
+            <div class="second">
+                <label >From    :</label>
+                <input style="margin-left: 5%;"  type="text" placeholder="From" name="orgin">
+            </div>    
+        </p>
+        <p>
+            <div class="third">
+                <label >To    :</label>
+                <input style="margin-left: 6%;" type="text" placeholder="To" name="destiny">
+            </div>
+        </p>
+        <p>
+            <div class="fourth">
+                <label >Quantity:</label>
+                <input type="number" placeholder="quantity" name="qty">
+            </div>
+        </p>
+        <br>
+        <p>
+            <input class="last" type="submit" >
+        </p>
+        </br>
+     
+    </form>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'Task/layout.html' %}
+{% block head %}
+<style>
+     body{
+        background-color: aquamarine;
+    }
+      .center{
+        background-color: forestgreen;
+        border-radius: 10%;
+        margin-top: 15%;
+        margin-left: 30%;
+        margin-right: 35%;
+    }
+    .proc{
+        margin-left: 80%;
+    }
+    .first{
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    .second{
+        margin-left: 19%;
+    }
+    .thrid{
+        margin-left: 20%;
+    }
+    .last{
+        margin-left: 65%;
+        margin-bottom: 10%;
+        background-color: antiquewhite;
+    }
+</style>
+{% endblock %}
+{% block body %}
+    <p class="proc">
+        <a href="{% url 'home' %}">Home</a>
+        <a style="margin-left: 10%;" href="{% url 'product' %}">Product</a>
+    </p>
+
+    <form class="center" method="POST" action="{% url 'product' %}">
+    {% csrf_token %}
+    <br>
+        <p>
+            <div class="first">
+                <label>Product     :</label>
+                <input style="margin-left: 4%;" type="text" placeholder="Product" name="pname">
+            </div>
+        </p>
+        <p>
+            <div class="second">
+                <label>Warehouse:</label>
+                <input  style="margin-left:auto;" type="text" placeholder="Warehouse" name="name">
+            </div>
+        </p>
+        <p>
+            <div class="thrid">
+                <label>Location    :</label>
+                <input style="margin-left: 2%;" type="text" placeholder="location" name="place">
+            </div>    
+        </p>
+    </br>
+        <p>
+            <input class="last" type="submit">
+        </p>
+    </form>
+{% endblock %}
